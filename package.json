@@ -1,0 +1,17 @@
+{
+	"name": "root",
+	"private": true,
+	"workspaces": [
+		"packages/*"
+	],
+	"scripts": {
+		"install": "lerna bootstrap",
+		"dev": "kill-port --port 7000,7001,7002,7003 && lerna run dev",
+		"kill-dev": "kill-port --port 7000,7001,7002,7003",
+		"build": "lerna run build"
+	},
+	"devDependencies": {
+		"kill-port": "^1.6.1",
+		"lerna": "^5.3.0"
+	}
+}
