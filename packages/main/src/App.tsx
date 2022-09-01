@@ -22,14 +22,15 @@ function App() {
 		<Layout>
 			<Layout.Header style={{ zIndex: 100, height: 60, background: "#f5f5f5" }}>
 				<Space>
-					<Link to={"admin"}>ADMIN</Link>
+					<Link to={"/main/admin"}>ADMIN</Link>
 				</Space>
 			</Layout.Header>
 			<Layout.Content style={{ height: "calc(100vh - 60px)" }}>
 				<Routes>
 					<Route path={"/"} element={<Outlet />}>
 						<Route index element={<div>WUJIE MICRO APP</div>} />
-						<Route path={"admin"} element={<Admin />} />
+						{/* 这里的路由需要和生产的 ng 配置的路径一致 */}
+						<Route path={"/main/admin"} element={<Admin />} />
 					</Route>
 				</Routes>
 			</Layout.Content>
