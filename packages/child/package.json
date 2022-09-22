@@ -1,5 +1,5 @@
 {
-	"name": "admin",
+	"name": "@scrm/admin",
 	"private": true,
 	"version": "0.0.0",
 	"type": "module",
@@ -13,7 +13,7 @@
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
 		"react-router-dom": "^6.3.0",
-		"wujie-react": "^1.0.0-rc.12"
+		"wujie-react": "latest"
 	},
 	"devDependencies": {
 		"@types/node": "^18.7.13",

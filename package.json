@@ -5,7 +5,7 @@
 		"packages/*"
 	],
 	"scripts": {
-		"install": "lerna bootstrap",
+		"init": "yarn install && lerna bootstrap",
 		"dev": "kill-port --port 7000,7001,7002,7003 && lerna run dev",
 		"kill-dev": "kill-port --port 7000,7001,7002,7003",
 		"build": "lerna run build"
